@@ -40,7 +40,16 @@ saside img {
 }    
 
 footer {
-    margin-top: 1cm;
-    border-top:1px solid  #000;
-    text-align
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
 }
+
+
+
+    
