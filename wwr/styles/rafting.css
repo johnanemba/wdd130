@@ -1,5 +1,23 @@
- a {
-    color: #000;
+* {
+    box-sizing: border-box;
+}
+
+/* Remove the below code if you want underlines on links */
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 100;
+    position: relative; /* Changed from absolute */
+}
+
+div {
+    position: relative;
+}
+
+a {
+    color: var(--vibrant-aqua); /* Changed to match the theme */
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -7,13 +25,104 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s;
- }
-    .hero  image {
-        display: block;
-        width: 100%;
-        height: auto;
-        
-    }
+}
 
+a:hover {
+    text-decoration: underline; /* Shows underline on hover */
+}
 
+.hero img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
 
+article {
+    position: relative; /* Ensure the article content stays in place */
+}
+
+/* Base Colors */
+:root {
+    --deep-blue: #003366;
+    --vibrant-aqua: #00B2A9;
+    --earthy-green: #3A6A3D;
+    --sunset-orange: #FF8C00;
+}
+
+/* Global Styles */
+body {
+    font-family: "Roboto", serif;
+    color: white; /* Default text color */
+    background-color: var(--deep-blue); /* Deep blue background */
+}
+
+header {
+    background-color: var(--deep-blue);
+    padding: 20px;
+}
+
+header .logo-box p {
+    color: var(--vibrant-aqua);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--vibrant-aqua);
+    color: white;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: var(--vibrant-aqua);
+}
+
+section {
+    padding: 20px;
+    background-color: var(--earthy-green);
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+button {
+    background-color: var(--sunset-orange);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+footer {
+    background-color: var(--deep-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .sociallinks a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+footer .sociallinks a:hover {
+    color: var(--vibrant-aqua);
+}
