@@ -105,6 +105,11 @@ article {
     position: relative; /* Ensure the article content stays in place */
 }
 
+img  { position: relative
+
+
+}
+
 /* Base Colors */
 :root {
     --deep-blue: #003366;
@@ -152,6 +157,70 @@ body {
     background-color: var(--deep-blue); /* Deep blue background */
     font-size: var(--font-size);
     color: var(--primary-color);
+}
+
+nav{
+   background-color: #3498db;
+}
+
+nav u1 {
+  list-style: none;
+  display: flex;
+
+}
+
+nav li {
+  flex: 1 1 100%auto
+
+}
+
+nav a{
+  display: block;
+  color: #000;
+  text-align: center;
+}
+
+.flex-container {
+       border: spx dashed brown;
+       background-color: #FF8C00;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+
+}
+
+.flex-item1 {
+    width: 250px;
+    margin: 1rm;
+    border: 1px solisd;
+    padding: 0.5rm;
+    background-color: #333;
+    color: #ccc;
+    align-items: stretch;
+}
+
+.flex-item1{
+  min-height: 100px;
+
+}
+
+.flex-item2 {
+  min-height: 200px;
+
+}
+.flex-item3{
+   min-height: height 300px;
+
+}
+
+.flex-item4{
+   min-height: height 300px;
+
+}
+
+.flex-item5{
+   min-height: height 300px;
+
 }
 
 header {
