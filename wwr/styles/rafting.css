@@ -2,6 +2,52 @@
     box-sizing: border-box;
 }
 
+/* Logo Styling */
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+header {
+  display: flex;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc; /* Subtle border for separation */
+  background-color: var(--deep-blue);
+}
+
+
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.navigation li {
+  margin-left: 0 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navigation a:hover {
+  color: #007BFF;
+}
+
+
 /* Remove the below code if you want underlines on links */
 a {
     text-decoration: none;
@@ -10,6 +56,7 @@ a {
 h1 {
     font-weight: 100;
     position: relative; /* Changed from absolute */
+    color: var(--secondary-color);
 }
 
 div {
@@ -36,6 +83,25 @@ a:hover {
     width: 100%;
     height: auto;
     float: right;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.hero-container {
+   position: relative;    /* Allow absolute positioning inside this container */
+   height: 500px;         /* Or any other desired height */
+}
+
+.hero {
+   position: absolute;    /* Position the hero div absolutely inside the container */
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5); /* Optional: Background with transparency */
+   color: white;          /* Text color */
 }
 
 article {
@@ -48,6 +114,38 @@ article {
     --vibrant-aqua: #00B2A9;
     --earthy-green: #3A6A3D;
     --sunset-orange: #FF8C00;
+     --primary-color: #3498db;
+   --secondary-color: #2ecc71;
+   --font-size: 16px;
+}
+
+.history {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.history h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
 }
 
 /* Global Styles */
@@ -55,6 +153,8 @@ body {
     font-family: "Roboto", serif;
     color: white; /* Default text color */
     background-color: var(--deep-blue); /* Deep blue background */
+    font-size: var(--font-size);
+    color: var(--primary-color);
 }
 
 header {
@@ -106,23 +206,87 @@ button:hover {
     background-color: darkorange;
 }
 
+.adventures {
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.adventures h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  width: 18%; /* Adjust width to fit five items */
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners to the images */
+}
+
+.adventure-gallery figcaption {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 footer {
     background-color: var(--deep-blue);
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .sociallinks a {
     color: white;
     margin: 0 10px;
+    margin: 0 10px; /* Add space between the icons */
+    display: flex;
+    align-items: center;
 }
 
 footer .sociallinks img {
     width: 20px;
+    height: 30px;
     margin-left: 5px;
+    display: block;  /* Ensure it's not set to 'none' */
+    position: relative; /* Avoid using absolute unless necessary */
 }
 
 footer .sociallinks a:hover {
     color: var(--vibrant-aqua);
+}
+
+@media (max-width: 768px) {
+   footer {
+      /* Make sure it's still visible */
+      padding: 10px;
+      font-size: 14px;
+   }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /* Vertically center the items */
+}
+
+.social-icons img {
+  margin-left: 10px; /* Add space between the icons */
 }
