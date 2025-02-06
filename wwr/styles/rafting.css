@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 /* Logo Styling */
 .logo {
@@ -83,7 +81,6 @@ a:hover {
     width: 100%;
     height: auto;
     float: right;
-    background-image: url('path-to-your-image.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 20px;
