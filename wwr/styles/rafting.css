@@ -10,16 +10,46 @@
   height: auto;
 }
 
-header {
-  display: flex;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 2px solid #ccc; /* Subtle border for separation */
-  background-color: var(--deep-blue);
+.logo-box {
+    grid-area: logo-box;
 }
 
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo-box header-title"
+        "logo-box nav";
+    gap: 10px;
+}
+
+header h1, header p {
+    grid-area: header-title;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;  /* Optional: add hover effects */
+}
 
 .navigation ul {
   display: flex;
@@ -163,14 +193,14 @@ nav{
    background-color: #3498db;
 }
 
-nav u1 {
+nav ul {
   list-style: none;
   display: flex;
 
 }
 
 nav li {
-  flex: 1 1 100%auto
+  flex: 1 1 auto
 
 }
 
@@ -197,11 +227,7 @@ nav a{
     background-color: #333;
     color: #ccc;
     align-items: stretch;
-}
-
-.flex-item1{
-  min-height: 100px;
-
+    min-height: 100px;
 }
 
 .flex-item2 {
@@ -214,7 +240,7 @@ nav a{
 }
 
 .flex-item4{
-   min-height: height 300px;
+   min-height: 300px;
 
 }
 
@@ -306,6 +332,30 @@ button:hover {
   margin-top: 10px;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.sociallinks a img {
+    width: 40px;  /* Adjust size as needed */
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.sociallinks a:hover img {
+    transform: scale(1.1);  /* Optional: Add hover effect */
+}
+
+nav ul li a {
+    color: #333;
+}
+
+footer p {
+    color: #333;
 }
 
 footer {
