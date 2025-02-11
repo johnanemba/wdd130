@@ -17,6 +17,53 @@
 </head>
 
 <body>
+
+     <div class="container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      
+      <!-- User Name -->
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Purpose of the Message (Radio Buttons) -->
+      <div class="form-group">
+        <label for="purpose">Purpose of Your Message:</label><br>
+        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+        <label for="general">General Inquiry</label><br>
+        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+        <label for="reservation">Reservation Question</label><br>
+        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+        <label for="suggestion">Website Suggestion</label>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <!-- Newsletter Subscription Checkbox -->
+      <div class="form-group">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+      
+    </form>
+  </div>
     <header>
         <div class="logo-box">
             <img src="images/rapid.jpg" alt="Blue water" class="float-image" width="200">
@@ -35,10 +82,22 @@
     </header>
 
     <main>
-        <h1>Rafting Company</h1>
-        <img src="images/zrafting.jpg" alt="Logo of Blue Water Rafting Company" width="200">
+        <h1>Contact us</h1>
+
+        <h2>send us a message</h2>
+
+        <p>Blue water rafting company</p>
+        <p>phone +254726448320</p>
+        <p>Email:<a href="john:">johnanemba@gmail.com</a></p>
+        <div class="map">
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31910.31977915357!2d36.880384!3d-1.3008895999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1739258877441!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="images/rafting60.jpg" alt="Logo of Blue Water Rafting Company" width="200">
         <section>
             <h2>History</h2>
+
+            <p>Blue water Rafting company</p>
             <p>This company was started by my grandfather after he was kicked out of a similar company. He always wanted to be self-employed, but because of the situation, he got an opportunity to do so. Maisha ni kujaribu, usiogope kuanguka (Life is about trying, don't be afraid of falling). Our mission is to make everyone happy.</p>
             <p>We offer the best services in the world. This company started in 1990 and has been ranked as one of the best in the history of human adventure. We show people experiences they've never heard of or seen in their life. We were even awarded the Nobel Prize by our former president:</p>
             <ul>
@@ -89,8 +148,8 @@
     </aside>
 
     <footer>
-        <p>@2025 Blue Water Rafting, John Anemba Nairobi, Kenya</p>
-         <nav class="sociallinks">
+         <p>&copy; 2025 Blue Water Rafting, John Anemba Nairobi, Kenya</p>
+    <nav class="sociallinks">
         <a href="https://facebook.com" target="_blank">
             <img src="images/facebook.jpg" alt="Facebook">
         </a>
@@ -103,7 +162,9 @@
         <a href="https://youtube.com" target="_blank">
             <img src="images/youtube.jpg" alt="YouTube">
         </a>
-    </footer>
+    </nav>
+    <p><a href="rafting43image.png" target="_blank" style="color: white; text-decoration: none;">View Contact Us Wireframe</a></p>
+</footer>
 </body>
 
 </html>
