@@ -66,29 +66,185 @@
   </div>
     <header>
         <div class="logo-box">
-            <img src="images/rapid.jpg" alt="Blue water" class="float-image" width="200">
+            <img src="images/zrafting.jpg" alt="Blue water" class="float-image" width="200">
             <h1>Welcome to My Website of Blue Water Rafting Company</h1>
             <p>Experience the thrill of a lifetime!</p>
             <p>Wonderful events, try us!</p>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
 
+      <!-- Call to Action to Contact Us -->
+    <section class="cta-contact">
+        <h2>Contact Us to Book Your Adventure</h2>
+        <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </section>
+
+    <!-- Detailed Trip Descriptions -->
+    <section class="trip-descriptions">
+        <div class="trip">
+            <img src="images/rafting16.jpg" alt="Rafting trip 1">
+            <h3>Adventure on the Rapids</h3>
+            <p>Embark on an adrenaline-pumping rafting adventure through fast-moving rapids. Suitable for thrill-seekers and experienced rafters.</p>
+        </div>
+        <div class="trip">
+            <img src="images/rafting43.jpg" alt="Rafting trip 2">
+            <h3>Family Fun Rafting</h3>
+            <p>A family-friendly rafting trip that offers excitement and fun for all ages. Perfect for families with young children or beginners.</p>
+        </div>
+        <div class="trip">
+            <img src="images/rafting41.jpg" alt="Rafting trip 3">
+            <h3>Ultimate White Water Challenge</h3>
+            <p>For experienced adventurers, this trip takes you through the most challenging rapids in the region. A true test of skill and courage.</p>
+        </div>
+    </section>
+
+    <!-- Trip Information Table -->
+    <section class="trips-table">
+        <h2>Available Trips</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Location</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adventure on the Rapids</td>
+                    <td>Grand River</td>
+                    <td>3 hours</td>
+                    <td>$99</td>
+                </tr>
+                <tr>
+                    <td>Family Fun Rafting</td>
+                    <td>Clear Creek</td>
+                    <td>2 hours</td>
+                    <td>$59</td>
+                </tr>
+                <tr>
+                    <td>Ultimate White Water Challenge</td>
+                    <td>Rocky River</td>
+                    <td>4 hours</td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+     <!-- Hero Image Section -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Rafting Adventure">
+        <div class="hero-text">
+            <h2>Experience the Thrill of Blue Water Rafting!</h2>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Form -->
+    <section class="newsletter">
+        <h2>Stay Updated with Our Latest Trips</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Call to Action (CTA) Section -->
+    <section class="cta">
+        <h2>Ready to Take the Plunge?</h2>
+        <a href="trips.html" class="cta-button">Browse Our Trips</a>
+    </section>
+
+    <!-- CSS Grid Layout for Additional Content -->
+    <section class="grid-layout">
+        <div class="grid-item">
+            <img src="images/rafting27.jpg" alt="Rafting on a river">
+            <h3>Our Purpose</h3>
+            <p>We offer thrilling Blue water rafting experiences designed for all adventure levels.</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/rafting12.jpg" alt="Rafting group on water">
+            <h3>Our Offerings</h3>
+            <p>From stert trips to extreme rapids, we provide unforgettable rafting journeys.</p>
+        </div>
+    </section>
+
+
     <main>
+         <section id="cta">
+            <h2>Book Your Next Adventure with Us!</h2>
+            <p>Contact us today to reserve your spot on an unforgettable rafting trip!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+
+        <section id="trip-descriptions">
+            <h2>Our Exciting Rafting Trips</h2>
+
+            <!-- Trip 1 -->
+            <div class="trip">
+                <img src="images/rafting14.jpg" alt="Rafting Trip 1">
+                <div class="trip-info">
+                    <h3>Beginner's River Adventure</h3>
+                    <p>Join us for a scenic, relaxing trip down the river. Perfect for beginners or those looking to enjoy a peaceful ride.</p>
+                    <ul>
+                        <li>Duration: 2 hours</li>
+                        <li>Difficulty: Easy</li>
+                        <li>Price: $50 per person</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Trip 2 -->
+            <div class="trip">
+                <img src="images/rafting18.jpg" alt="Rafting Trip 2">
+                <div class="trip-info">
+                    <h3>Intermediate Rapids Adventure</h3>
+                    <p>Experience the thrill of faster currents and exciting rapids on this intermediate-level trip!</p>
+                    <ul>
+                        <li>Duration: 4 hours</li>
+                        <li>Difficulty: Moderate</li>
+                        <li>Price: $80 per person</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Trip 3 -->
+            <div class="trip">
+                <img src="images/rafting36.jpg" alt="Rafting Trip 3">
+                <div class="trip-info">
+                    <h3>Advanced Whitewater Challenge</h3>
+                    <p>For the most adventurous souls! Tackle the most intense rapids on this adrenaline-pumping journey.</p>
+                    <ul>
+                        <li>Duration: 6 hours</li>
+                        <li>Difficulty: Advanced</li>
+                        <li>Price: $120 per person</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <h1>Contact us</h1>
 
         <h2>send us a message</h2>
 
         <p>Blue water rafting company</p>
         <p>phone +254726448320</p>
-        <p>Email:<a href="john:">johnanemba@gmail.com</a></p>
+        <a href="mailto:johnanemba@gmail.com">johnanemba@gmail.com</a>
+
         <div class="map">
             <iframe
              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31910.31977915357!2d36.880384!3d-1.3008895999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1739258877441!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -149,6 +305,12 @@
 
     <footer>
          <p>&copy; 2025 Blue Water Rafting, John Anemba Nairobi, Kenya</p>
+          <p>&copy; 2025 WWR Rafting. All rights reserved.</p>
+          <p><a href="rafting43image.png" target="_blank" style="color: white; text-decoration: none;">View Contact Us Wireframe</a></p>
+          <p><a href="images/trips-wireframe.jpg" target="_blank">View Trips Page Wireframe</a></p>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+          <p><a href="images/rafting60" target="_blank">View Wireframe Design</a></p>
+    </footer>
     <nav class="sociallinks">
         <a href="https://facebook.com" target="_blank">
             <img src="images/facebook.jpg" alt="Facebook">
@@ -163,7 +325,7 @@
             <img src="images/youtube.jpg" alt="YouTube">
         </a>
     </nav>
-    <p><a href="rafting43image.png" target="_blank" style="color: white; text-decoration: none;">View Contact Us Wireframe</a></p>
+     
 </footer>
 </body>
 
