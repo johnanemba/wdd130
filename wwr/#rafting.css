@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* Ensures text is readable on the blue background */
+}
+
+header {
+    background-color: #333;
+    color: white; /* Changed to white for better contrast */
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white; /* Ensure the links are readable */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.newsletter form input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.newsletter form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter form button:hover {
+    background-color: #555;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #ff7f00;
+    text-align: center;
+    padding: 40px;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 32px;
+}
+
+.cta .cta-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #bbb; /* A lighter color for the button */
+    border-radius: 5px;
+}
+
+.cta .cta-link:hover {
+    background-color: #333;
+}
+
+/* Grid Layout Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Trips Page Styles */
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.trip-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.trip-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.trip-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.trip-table {
+    padding: 40px;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: #333;
+    color: white;
+}
+
+.trip-table td {
+    background-color: #f9f9f9;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #ff7f00;
+    text-align: center;
+    padding: 40px;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 32px;
+}
+
+.cta .cta-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #bbb;
+    border-radius: 5px;
+}
+
+.cta .cta-link:hover {
+    background-color: #333;
+}

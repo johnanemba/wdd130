@@ -341,7 +341,14 @@ body {
 .trips-table th {
     background-color: #f4f4f4;
 }
-
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.trip {
+    text-align: center;
+}
 
  .container {
       width: 50%;
